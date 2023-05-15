@@ -1,0 +1,24 @@
+#+title: Readme
+
+* Introduction
+This is a experimental repository dedicated to the testing of the *intermediaryAnalysis* branch of the
+[[https://github.com/thiagotps/lmshs][lmshs]] repository.
+
+* Cloning
+For cloning this repository and its submodules, just run:
+#+begin_src bash
+git clone https://github.com/thiagotps/lms-intermediary-analysis
+git submodule init
+git submodule update
+#+end_src
+
+* Compiling
+For compiling you'll need [[https://docs.haskellstack.org/en/stable/][stack]] installed, which probably can be easily achieved via your distribution's package manager. With this in hand, just execute:
+ #+begin_src bash
+stack build
+ #+end_src
+
+ To run the code, just type:
+ #+begin_src bash
+ stack run lmshs -- --help
+ #+end_src
