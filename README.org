@@ -13,7 +13,7 @@ git submodule update
 #+end_src
 
 * Compiling
-For compiling you'll need [[https://docs.haskellstack.org/en/stable/][stack]] installed, which probably can be easily achieved via your distribution's package manager. With this in hand, just execute:
+For compiling you'll need [[https://docs.haskellstack.org/en/v1.2.0/install_and_upgrade/][stack]] installed, which probably can be easily achieved via your distribution's package manager. With this in hand, just execute:
  #+begin_src bash
 stack build
  #+end_src
