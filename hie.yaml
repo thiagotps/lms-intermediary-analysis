@@ -1,0 +1,16 @@
+cradle:
+  stack:
+    - path: "linear-algebra/src-libs"
+      component: "linear-algebra:lib"
+
+    - path: "linear-algebra/src-exe/Main.hs"
+      component: "linear-algebra:exe:linear-algebra"
+
+    - path: "lmshs/src-libs"
+      component: "lmshs:lib"
+
+    - path: "lmshs/src-exe/Main.hs"
+      component: "lmshs:exe:lmshs"
+
+    - path: "lmshs/test"
+      component: "lmshs:test:symbolic-test"
