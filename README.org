@@ -146,6 +146,7 @@ Suppose now that we want to output the =emse= evolution for the above setting, w
 stack run lmshs -- complete -N 3 -M 2 --startlevelforia 2 --maxiter 300 --stepsize 0.2 --sigmav2 0.01 --emsefile /tmp/esme.txt
 #+end_src
 
+The contents of =/tmp/esme.txt= is now:
 #+begin_src txt
 0 2.875
 1 2.1750000000000003
