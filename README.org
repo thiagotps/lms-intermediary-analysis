@@ -8,6 +8,7 @@ This is a experimental repository dedicated to the testing of the *intermediaryA
 For cloning this repository and its submodules, just run:
 #+begin_src bash
 git clone https://github.com/thiagotps/lms-intermediary-analysis
+cd lms-intermediary-analysis
 git submodule init
 git submodule update
 #+end_src
@@ -24,7 +25,6 @@ stack build
  stack run lmshs -- --help
  #+end_src
 
- Whose ouput is:
  #+begin_src txt
 The progargs program
 
@@ -80,12 +80,11 @@ numberOfEqs = 698
  #+end_src
 
 
-Suppose now that we want to reapeat the above experiment but applying the independece assumption on level 2 and forward of the recursion. We can thus execute:
+Suppose now that we want to repeat the above experiment but applying the independence assumption on level 2 and forward of the recursion. We can thus execute:
  #+begin_src bash
 stack run lmshs -- simple -N 3 -M 2 --startlevelforia 2
  #+end_src
 
-Whose output is:
 #+begin_src bash
 "Running with 1 threads."
 numberOfLevels = 3
@@ -125,7 +124,7 @@ useSpectra = False
 Maximum step-size = 0.13583465576171877
 #+end_src
 
-If it's needed to reapeat the above experiment, but applying the I.A hypothesis from the second recursion level, then what should be executed is:
+If it's needed to repeat the above experiment, but applying the I.A hypothesis from the second recursion level, then what should be executed is:
 #+begin_src bash
 stack run lmshs -- complete -N 3 -M 2 --startlevelforia 2  --maxstepsize --sigmav2 0.01
 #+end_src
